@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *:root {
-    --bg-color: #0f0f0fee;
+    --bg-color: #0F0F0F;
     --txt-color: #FFFFFF;
     --font-family: "Source Sans Pro", sans-serif;
 }
@@ -11,9 +11,6 @@
     background-color: var(--bg-color);
     color: var(--txt-color);
     font-family: var(--font-family);
-    box-shadow: 12px 10px 7px rgba(0, 0, 0, 0.75);
-    margin: 2px;
-    padding: 1rem;
 }
 
 .menu-header {
@@ -25,11 +22,11 @@
 }
 
 .logo {
-  width: 100%;
+    width: 100%;
 }
 
 .list {
-    margin: 0.75rem;
+    margin: 0.5rem;
 }
 
 .list-item {
