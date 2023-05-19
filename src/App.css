@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *:root {
-    --bg-color: #0f0f0ff5;
+    --bg-color: #0f0f0f;
     --txt-color: #FFFFFF;
     --font-family: "Source Sans Pro", sans-serif;
 }
 
+.no-display {
+  display: none;
+}
+
 .side-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
     width: 12%;
     background-color: var(--bg-color);
     color: var(--txt-color);
@@ -14,6 +21,18 @@
     box-shadow: 12px 10px 7px rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border: 2px solid black;
+}
+
+.side-bar {
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3rem;
+  height: 100%;
+  padding: 1em;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
 }
 
 .menu-header {

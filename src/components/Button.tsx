@@ -1,6 +1,6 @@
 function Button() {
     return (
-        <button>CLICK IT</button>
+        <button type="button">Toggle Menu</button>
     );
 }
 

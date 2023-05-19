@@ -3,10 +3,12 @@ import React from 'react';
 import './App.css';
 import Button from './components/Button';
 import SideMenu from './components/SideMenu';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
     <div className="App">
+      <SideBar />
       <SideMenu />
       {/* <Button /> */}
     </div>
