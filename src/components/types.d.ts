@@ -1,3 +1,8 @@
+declare interface LinkProps {
+    href: string;
+    text: string;
+}
+
 declare interface ListItem {
     id: number;
     icon: string;
