@@ -1,26 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *:root {
-    --bg-color: #0f0f0f;
-    --txt-color: #FFFFFF;
-    --font-family: "Source Sans Pro", sans-serif;
+  --bg-color: #0f0f0f;
+  --second-color: #3a3a3a;
+  --txt-color: #FFFFFF;
+  --font-family: "Source Sans Pro", sans-serif;
+  --box-shadow-default: 12px 10px 7px rgba(0, 0, 0, 0.8);
 }
 
+/* Utility Styles */
 .no-display {
   display: none;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 2rem;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* Side Menu */
 .side-menu-wrapper {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    width: 12%;
-    background-color: var(--bg-color);
-    color: var(--txt-color);
-    font-family: var(--font-family);
-    box-shadow: 12px 10px 7px rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 12%;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: var(--font-family);
+  box-shadow: var(--box-shadow-default);
+  padding: 1rem;
+  border: 2px solid black;
 }
 
 .side-bar {
@@ -36,11 +50,11 @@
 }
 
 .menu-header {
-    height: 56px;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;   
+  height: 56px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;   
 }
 
 .logo {
@@ -48,15 +62,50 @@
 }
 
 .list {
-    margin: 0.75rem;
+  margin: 0.75rem;
 }
 
 .list-item {
-    list-style: none;
-    margin: 1.25rem;
+  list-style: none;
+  margin: 1.25rem;
 }
 
 a {
-    text-decoration: none;
-    color: var(--txt-color);
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+/* Form styles */
+label {
+  margin: auto 1rem;
+  font-size: 1.2rem;
+}
+
+.form-group {
+  margin: 1rem;
+  width: 100%;
+}
+
+#email {
+  margin-left: 2.7rem;
+  width: 50%;
+}
+
+#fname, #lname, #email {
+  width: 50%;
+}
+
+.input-form {
+  border: 4px solid rgb(20, 20, 20);
+  background: linear-gradient(var(--bg-color), var(--second-color));
+  color: var(--txt-color);
+  box-shadow: var(--box-shadow-default);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
