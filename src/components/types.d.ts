@@ -29,4 +29,6 @@ declare interface FormInputProps {
     id: string;
     name: string;
     inputType: string;
+    pattern?: string;
+    placeholder?: string;
 }

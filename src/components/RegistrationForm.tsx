@@ -19,6 +19,7 @@ export default function Form(props: FormProps) {
                     id="fname"
                     name="fname"
                     inputType="text"
+                    placeholder="Your first name"
                 />
                 <FormInput 
                     forLabel="lname" 
@@ -26,6 +27,7 @@ export default function Form(props: FormProps) {
                     id="lname"
                     name="lname"
                     inputType="text"
+                    placeholder="Your last name"
                 />
                 <FormInput 
                     forLabel="email"
@@ -33,6 +35,7 @@ export default function Form(props: FormProps) {
                     id="email"
                     name="email"
                     inputType="email"
+                    placeholder="your.name@example.com"
                 />
             </form>
         </div>

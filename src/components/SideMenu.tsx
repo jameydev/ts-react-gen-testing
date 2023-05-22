@@ -1,6 +1,7 @@
 import MenuHeader from "./MenuHeader";
 import List from "./List";
 import listItems from "../data/items";
+import { ReactNode, useRef, useState } from "react";
 
 export default function SideMenu() {
     return (

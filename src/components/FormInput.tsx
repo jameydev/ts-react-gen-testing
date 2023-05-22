@@ -5,13 +5,15 @@ export default function FormInput(props: FormInputProps) {
         labelTxt,
         id,
         name,
-        inputType
+        inputType,
+        pattern,
+        placeholder
     } = props;
 
     return (
         <div className="form-group">
             <label htmlFor={forLabel}>{labelTxt}</label>
-            <input type={inputType} id={id} name={name} />
+            <input type={inputType} id={id} name={name} pattern={pattern} placeholder={placeholder}/>
         </div>
     );
 }
